@@ -1,0 +1,48 @@
+@import url('colores.css');
+.container{
+    display :flex ;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 0 40px var(--color-fondo);
+    transition: 0.3s;
+    pointer-events: auto; /* Restaura la detección de eventos en elementos internos */
+    background-color: --color-fondo;
+}
+
+.card .cont_text,
+.card .image {
+    pointer-events: none; /* Evita que los elementos internos intercepten eventos */
+}
+
+.card{
+    border-radius: 10px;
+    border: 1px solid var(--color-primario);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+
+.cont_text{
+    margin: 10px;
+    width: 50%;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+
+}
+
+.image img{
+    
+    width: 314px;
+    height: 170px;
+   
+}

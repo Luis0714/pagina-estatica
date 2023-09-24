@@ -1,0 +1,58 @@
+@import url("colores.css");
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece la altura mínima del cuerpo como el 100% del alto de la ventana. */
+    margin: 0;
+}
+
+header {
+    background: var(--color-primario);
+    text-align: center;
+    padding: 20px;
+}
+
+.nav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.logo{
+    color: var(--color-fondo);
+}
+
+.opciones{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.opciones li a{
+    color: var(--text-white);
+    text-decoration: none;
+}
+.opciones li a:hover{
+    color: var(--text-black);
+}
+main {
+    flex-grow: 1;
+    margin: 12px;
+    padding: 20px;
+    background-color: var(--text-secundario);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    background: var(--color-primario);
+    color:var(--text-white);
+    padding: 10px;
+}

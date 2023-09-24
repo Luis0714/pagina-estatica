@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.column{
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid var(--color-primario);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 40px;
+}
+
+.column:hover {
+    box-shadow: 0 0 40px var(--color-primario);
+    transition: 0.3s;
+    pointer-events: auto; /* Restaura la detección de eventos en elementos internos */
+}
+
+.column h2 ul {
+    pointer-events: none; /* Evita que los elementos internos intercepten eventos */
+}
+
