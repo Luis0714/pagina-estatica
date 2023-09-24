@@ -39,8 +39,35 @@ header {
     text-decoration: none;
 }
 .opciones li a:hover{
-    color: var(--text-black);
+    color: var(--color-segundario);
 }
+.opcion {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px; /* Espacio para la barra de resaltado */
+}
+
+.opcion a {
+    text-decoration: none;
+    color: #000; /* Color de texto normal */
+}
+
+.opcion::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px; /* Altura de la barra de resaltado */
+    background-color: var(--color-fondo); /* Color de la barra de resaltado */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Animación de la barra */
+}
+
+.opcion:hover::after {
+    width: 100%; /* Ancho de la barra al pasar el mouse */
+}
+
 main {
     flex-grow: 1;
     margin: 12px;
