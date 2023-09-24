@@ -16,3 +16,10 @@
 .contenido p{
     color: var(--text-black);
 }
+
+.goals{
+    width: 50%;
+}
+li{
+    margin-bottom: 20px;
+}
