@@ -29,3 +29,6 @@
     pointer-events: none; /* Evita que los elementos internos intercepten eventos */
 }
 
+.column li{
+    margin-bottom: 10px;
+}
